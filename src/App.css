@@ -9,14 +9,22 @@
   width: 100%;
 }
 
-nav {
-  height: 85vh;
+.navBar {
+  height: 93vh;
   position: sticky;
   left: 0;
   top: 0;
   width: 16%;
   border-right: 1px solid #ccc;
 }
+
+.activeLink {
+  color: #3db5fe !important;
+  font-weight: 800;
+  border-right: 5px solid #3db5fe !important;
+}
+
+
 
 .outlets {
   width: 84%;
@@ -242,6 +250,8 @@ h4.nodeTitle.varNode {
   /* padding: 1%; */
   width: 40%;
   border-radius: 1%;
+  border: 1px solid #ccc;
+  text-align: center;
 }
 
 .ModalTitle {
@@ -249,6 +259,8 @@ h4.nodeTitle.varNode {
   line-height: 3;
   border-bottom: 1px solid rgb(229, 231, 235);
   margin-bottom: 2%;
+  display: block !important;
+  text-align: center;
 }
 
 
@@ -451,12 +463,12 @@ main.mainTableView {
   align-items: center;
 }
 
-.ModalTitle {
+/* .ModalTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
   line-height: unset;
-}
+} */
 
 .disabledSorting {
   opacity: 0.5;
