@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 
-const Table = lazy(() => import('../Table'));
+const DataTable = lazy(() => import('../../components/DataTable/components/TableConfigs'));
 const Charts = lazy(() => import('../../components/DataVisualizer/components/Charts'));
 const StoreView = lazy(() => import('../../components/StoreViewer/components/StoreView'));
 const DnDFlow = lazy(() => import('../../components/DAG/Components/DragandDrop/Dagger'));
@@ -24,7 +24,7 @@ const RouterConfig = [
     {
         path: '/table',
         sidebarName: 'Data Table',
-        component: <section className='outlets'><Table /></section>
+        component: <section className='outlets'><DataTable /></section>
     },
 ];
 

@@ -1,9 +1,7 @@
 import { memo } from 'react';
-// import './App.css';
-
 import { Box, Typography } from '@mui/material';
-import { APIresponse } from '../components/DataTable/assets/sample';
-import InfiniteScroll from '../components/DataTable/pages/InfiniteScroll';
+import { APIresponse } from '../assets/sample';
+import InfiniteScroll from '../pages/InfiniteScroll';
 
 const configuration = {
     apiHandler: {
@@ -280,7 +278,7 @@ const configuration4 = {
 
 };
 
-function Table() {
+function TableConfigs() {
 
     return (
         <>
@@ -292,4 +290,4 @@ function Table() {
     );
 }
 
-export default memo(Table);
+export default memo(TableConfigs);
