@@ -3,6 +3,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Table from '../utilities/Table';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -46,7 +47,7 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
+            mt={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
         >
             <Tabs
                 orientation="vertical"
@@ -56,13 +57,13 @@ export default function VerticalTabs() {
                 sx={{ borderRight: 1, borderColor: 'divider' }}
                 selectionFollowsFocus
             >
-                <Tab label="Item One" {...a11yProps(0)} />
-                <Tab label="Item Two" {...a11yProps(1)} />
-                <Tab label="Item Three" {...a11yProps(2)} />
-                <Tab label="Item Four" {...a11yProps(3)} />
+                <Tab label="Data Table" {...a11yProps(0)} />
+                <Tab label="DAG Builder" {...a11yProps(1)} />
+                <Tab label="Data Visualization" {...a11yProps(2)} />
+                <Tab label="Store Viewer" {...a11yProps(3)} />
             </Tabs>
             <TabPanel value={value} index={0}>
-                Item One
+                <Table />
             </TabPanel>
             <TabPanel value={value} index={1}>
                 Item Two
