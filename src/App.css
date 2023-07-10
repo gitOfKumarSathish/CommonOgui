@@ -3,6 +3,24 @@
   /* margin: 0 auto; */
   padding: 2rem;
   /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  width: 100%;
+}
+
+nav {
+  height: 85vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 16%;
+  border-right: 1px solid #ccc;
+}
+
+.outlets {
+  width: 84%;
+  padding-left: 10px;
 }
 
 .logo {
