@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Table from '../utilities/Table';
 import { DnDFlow } from './components/DAG/Components/DragandDrop/Dagger';
 import Charts from './components/DataVisualizer/components/Charts';
+import StoreView from './components/StoreViewer/components/StoreView';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -49,7 +50,7 @@ export default function VerticalTabs() {
 
     return (
         <Box
-            mt={{ flexGrow: 5, bgcolor: 'background.paper', display: 'flex' }}
+            mt={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}
         >
             <Tabs
                 orientation="vertical"
@@ -77,7 +78,7 @@ export default function VerticalTabs() {
                 <Charts />
             </TabPanel>
             <TabPanel value={value} index={3}>
-                Item Four
+                <StoreView />
             </TabPanel>
         </Box>
     );

@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1920px;
+  /* margin: 0 auto; */
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .logo {
@@ -52,6 +52,10 @@
   background: #fff;
 }
 
+div[role="tabpanel"] {
+  width: 100%;
+  height: 100%;
+}
 
 /* ======================= DAG Builder CSS Starts here  =======================*/
 
@@ -344,3 +348,26 @@ select#dagList {
 }
 
 /* ======================= DAG Builder CSS Ends here  =======================*/
+
+
+/* ======================= Data Visualization CSS Starts here  =======================*/
+.chartParent {
+  position: relative;
+  border: 1px solid #eaeaea;
+  background-color: #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  /* width: 100%; */
+}
+
+.loadMoreButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  /* border-color: #ccc; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: #3db5fe;
+  color: #fff;
+}
+
+/* ======================= Data Visualization CSS Ends here  =======================*/
