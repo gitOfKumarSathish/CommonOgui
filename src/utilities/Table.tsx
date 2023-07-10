@@ -2,8 +2,8 @@ import { memo } from 'react';
 // import './App.css';
 
 import { Box, Typography } from '@mui/material';
-import { APIresponse } from '../pages/components/DataTable/assets/sample';
-import InfiniteScroll from '../pages/components/DataTable/pages/InfiniteScroll';
+import { APIresponse } from '../components/DataTable/assets/sample';
+import InfiniteScroll from '../components/DataTable/pages/InfiniteScroll';
 
 const configuration = {
     apiHandler: {
