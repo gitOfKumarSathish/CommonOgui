@@ -73,7 +73,7 @@ const getId = (type: string) => `${(type === 'input' || type === 'textUpdater') 
 //     textUpdater: (props: any) => <NodeCreator {...props} type='varNode' />,
 //     custom: (props: any) => <CustomNode {...props} type='funcNode' />,
 // };
-export const DnDFlow = () => {
+const DnDFlow = () => {
 
 
     const reactFlowWrapper = useRef(null);
