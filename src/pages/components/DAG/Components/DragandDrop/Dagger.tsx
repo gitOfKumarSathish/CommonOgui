@@ -25,6 +25,7 @@ import CustomNode from './CustomNode';
 import Load from './Load';
 import Save from './Save';
 import * as API from './../API/API';
+import 'reactflow/dist/style.css';
 import React from 'react';
 
 

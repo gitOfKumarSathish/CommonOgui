@@ -371,3 +371,107 @@ select#dagList {
 }
 
 /* ======================= Data Visualization CSS Ends here  =======================*/
+
+
+/* ======================= Data Table CSS Starts here  =======================*/
+
+table {
+
+  scroll-behavior: smooth;
+}
+
+.resizer {
+  display: inline-block;
+  background: #ccc;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.resizer.isResizing {
+  background: #ccc;
+}
+
+tr.highlightMe {
+  background: #ccc !important;
+}
+
+p.colorBox {
+  width: 25px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 25px;
+}
+
+main.mainTableView {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columnToggler {
+  width: 20%;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: 60vh;
+}
+
+.columnName label {
+  display: flex;
+  align-items: center;
+}
+
+
+.columnName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ModalTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: unset;
+}
+
+.disabledSorting {
+  opacity: 0.5;
+}
+
+p.lineInfo {
+  margin: 1% 1% 0;
+  font-size: 14px;
+}
+
+.MuiTable-stickyHeader thead {
+  position: sticky !important;
+  top: 0;
+  z-index: 99;
+  background: #fff;
+}
+
+
+
+.css-apqrd9-MuiTableBody-root {
+  text-align: left;
+}
+
+.Mui-TableHeadCell-Content-Labels {
+  text-transform: capitalize;
+}
+
+.row-expand {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+  text-align: left;
+  flex-direction: column;
+}
+
+/* ======================= Data Table CSS Ends here  =======================*/
